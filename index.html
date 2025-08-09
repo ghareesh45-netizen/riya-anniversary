@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 3rd Anniversary, My Love! ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #f9f7f7;
+            --accent-color: #ffd93d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff5f5, #ffe3e3);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(50px);
+            opacity: 0;
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .love-note {
+            background: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            position: relative;
+        }
+
+        .love-note::before {
+            content: '❤️';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-size: 1.5rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+        }
+
+        .music-player {
+            background: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="loading"></div>
+    <div class="container">
+        <header>
+            <h1>Happy 3rd Anniversary, My Love! ❤️</h1>
+            <p>Three beautiful years of love, laughter, and countless memories...</p>
+        </header>
+
+        <section class="section" id="timeline">
+            <h2>Our Journey Together</h2>
+            <div class="timeline">
+                <!-- Timeline content will be added here -->
+            </div>
+        </section>
+
+        <section class="section" id="memories">
+            <h2>Special Memories</h2>
+            <div class="gallery">
+                <!-- Images and videos will be added here -->
+            </div>
+        </section>
+
+        <section class="section" id="love-notes">
+            <h2>Love Notes</h2>
+            <!-- Love notes will be added here -->
+        </section>
+
+        <section class="section" id="special-moments">
+            <h2>Magical Moments</h2>
+            <div class="gallery">
+                <!-- Special moments content will be added here -->
+            </div>
+        </section>
+
+        <section class="section" id="music">
+            <h2>Our Playlist</h2>
+            <div class="music-player">
+                <!-- Music player will be added here -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ for you</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
