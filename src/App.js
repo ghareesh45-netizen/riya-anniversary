@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
+import './responsive.css'; // Import responsive styles
 
 // Components
 import TeddyGifs from './components/TeddyGifs';
@@ -96,7 +97,7 @@ function App() {
       <div className="greeting-card">
         {/* Add MusicPlayer here so it persists across all pages */}
         <div style={{ position: 'fixed', bottom: '10px', right: '10px', zIndex: 1000 }}>
-          <MusicPlayer songSrc="/music/our_song.mp3" />
+          <MusicPlayer songSrc={`${process.env.PUBLIC_URL}/music/our_song.mp3`} />
         </div>
         
         {/* Floating hearts that appear occasionally */}

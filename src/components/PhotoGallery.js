@@ -7,20 +7,20 @@ const PhotoGallery = () => {
   // State for lightbox
   const [selectedImage, setSelectedImage] = useState(null);
   
-  // Placeholder for gallery images
+  // Gallery images using placeholder images from public folder with process.env.PUBLIC_URL
   const galleryImages = [
-    { id: 1, src: "PLACEHOLDER_1", alt: "Gallery image 1", category: "dates" },
-    { id: 2, src: "PLACEHOLDER_2", alt: "Gallery image 2", category: "trips" },
-    { id: 3, src: "PLACEHOLDER_3", alt: "Gallery image 3", category: "dates" },
-    { id: 4, src: "PLACEHOLDER_4", alt: "Gallery image 4", category: "fun" },
-    { id: 5, src: "PLACEHOLDER_5", alt: "Gallery image 5", category: "trips" },
-    { id: 6, src: "PLACEHOLDER_6", alt: "Gallery image 6", category: "fun" },
-    { id: 7, src: "PLACEHOLDER_7", alt: "Gallery image 7", category: "dates" },
-    { id: 8, src: "PLACEHOLDER_8", alt: "Gallery image 8", category: "trips" },
-    { id: 9, src: "PLACEHOLDER_9", alt: "Gallery image 9", category: "fun" },
-    { id: 10, src: "PLACEHOLDER_10", alt: "Gallery image 10", category: "dates" },
-    { id: 11, src: "PLACEHOLDER_11", alt: "Gallery image 11", category: "trips" },
-    { id: 12, src: "PLACEHOLDER_12", alt: "Gallery image 12", category: "fun" },
+    { id: 1, src: `${process.env.PUBLIC_URL}/placeholder_gallery1.jpg`, alt: "Gallery image 1", category: "dates" },
+    { id: 2, src: `${process.env.PUBLIC_URL}/placeholder_gallery2.jpg`, alt: "Gallery image 2", category: "trips" },
+    { id: 3, src: `${process.env.PUBLIC_URL}/placeholder_gallery3.jpg`, alt: "Gallery image 3", category: "dates" },
+    { id: 4, src: `${process.env.PUBLIC_URL}/placeholder_gallery4.jpg`, alt: "Gallery image 4", category: "fun" },
+    { id: 5, src: `${process.env.PUBLIC_URL}/placeholder_gallery5.jpg`, alt: "Gallery image 5", category: "trips" },
+    { id: 6, src: `${process.env.PUBLIC_URL}/placeholder_gallery6.jpg`, alt: "Gallery image 6", category: "fun" },
+    { id: 7, src: `${process.env.PUBLIC_URL}/placeholder_gallery7.jpg`, alt: "Gallery image 7", category: "dates" },
+    { id: 8, src: `${process.env.PUBLIC_URL}/placeholder_memory1.jpg`, alt: "Gallery image 8", category: "trips" },
+    { id: 9, src: `${process.env.PUBLIC_URL}/placeholder_memory2.jpg`, alt: "Gallery image 9", category: "fun" },
+    { id: 10, src: `${process.env.PUBLIC_URL}/placeholder_memory3.jpg`, alt: "Gallery image 10", category: "dates" },
+    { id: 11, src: `${process.env.PUBLIC_URL}/placeholder_memory4.jpg`, alt: "Gallery image 11", category: "trips" },
+    { id: 12, src: `${process.env.PUBLIC_URL}/placeholder_memory5.jpg`, alt: "Gallery image 12", category: "fun" },
   ];
   
   // Filter state
@@ -128,10 +128,12 @@ const PhotoGallery = () => {
             whileHover={{ scale: 1.03, boxShadow: "0px 10px 25px rgba(0,0,0,0.15)" }}
             onClick={() => openLightbox(image)}
           >
-            <div className="image-placeholder">
-              Photo {image.id}
-              <div className="placeholder-category">{image.category}</div>
-            </div>
+            <img 
+              src={image.src} 
+              alt={image.alt} 
+              className="gallery-image" 
+            />
+            <div className="placeholder-category">{image.category}</div>
             <div className="gallery-item-overlay">
               <FaHeart />
             </div>
@@ -158,10 +160,12 @@ const PhotoGallery = () => {
               </button>
               
               <div className="lightbox-image-container">
-                <div className="image-placeholder large-placeholder">
-                  Photo {selectedImage.id}
-                  <div className="placeholder-category">{selectedImage.category}</div>
-                </div>
+                <img 
+                  src={selectedImage.src} 
+                  alt={selectedImage.alt} 
+                  className="lightbox-image" 
+                />
+                <div className="placeholder-category">{selectedImage.category}</div>
               </div>
               
               <button className="nav-button next" onClick={() => navigateImage('next')}>

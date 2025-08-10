@@ -6,18 +6,18 @@ const GalleryPage = () => {
   
   // Gallery items - placeholders for now
   const galleryItems = [
-    { id: 1, type: 'image', src: 'placeholder_gallery1.jpg', alt: 'Special moment 1', caption: '' },
-    { id: 2, type: 'image', src: 'placeholder_gallery2.jpg', alt: 'Special moment 2', caption: '' },
-    { id: 3, type: 'video', src: 'placeholder_video1.mp4', alt: 'Fun video 1', caption: '' },
-    { id: 4, type: 'image', src: 'placeholder_gallery3.jpg', alt: 'Special moment 3', caption: '' },
-    { id: 5, type: 'image', src: 'placeholder_gif1.jpg', alt: 'Cute moment 1', caption: '' },
-    { id: 6, type: 'image', src: 'placeholder_gallery4.jpg', alt: 'Special moment 4', caption: '' },
-    { id: 7, type: 'video', src: 'placeholder_video2.mp4', alt: 'Fun video 2', caption: '' },
-    { id: 8, type: 'image', src: 'placeholder_gallery5.jpg', alt: 'Special moment 5', caption: '' },
-    { id: 9, type: 'image', src: 'placeholder_gif2.jpg', alt: 'Cute moment 2', caption: '' },
-    { id: 10, type: 'image', src: 'placeholder_gallery6.jpg', alt: 'Special moment 6', caption: '' },
-    { id: 11, type: 'image', src: 'placeholder_gallery7.jpg', alt: 'Special moment 7', caption: '' },
-    { id: 12, type: 'video', src: 'placeholder_video3.mp4', alt: 'Fun video 3', caption: '' },
+    { id: 1, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gallery1.jpg`, alt: 'Special moment 1', caption: '' },
+    { id: 2, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gallery2.jpg`, alt: 'Special moment 2', caption: '' },
+    { id: 3, type: 'video', src: `${process.env.PUBLIC_URL}/placeholder_video1.mp4`, alt: 'Fun video 1', caption: '' },
+    { id: 4, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gallery3.jpg`, alt: 'Special moment 3', caption: '' },
+    { id: 5, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gif1.jpg`, alt: 'Cute moment 1', caption: '' },
+    { id: 6, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gallery4.jpg`, alt: 'Special moment 4', caption: '' },
+    { id: 7, type: 'video', src: `${process.env.PUBLIC_URL}/placeholder_video2.mp4`, alt: 'Fun video 2', caption: '' },
+    { id: 8, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gallery5.jpg`, alt: 'Special moment 5', caption: '' },
+    { id: 9, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gif2.jpg`, alt: 'Cute moment 2', caption: '' },
+    { id: 10, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gallery6.jpg`, alt: 'Special moment 6', caption: '' },
+    { id: 11, type: 'image', src: `${process.env.PUBLIC_URL}/placeholder_gallery7.jpg`, alt: 'Special moment 7', caption: '' },
+    { id: 12, type: 'video', src: `${process.env.PUBLIC_URL}/placeholder_video3.mp4`, alt: 'Fun video 3', caption: '' },
   ];
   
   const openLightbox = (item) => {

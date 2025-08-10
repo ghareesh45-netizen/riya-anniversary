@@ -134,8 +134,12 @@ const Timeline = () => {
                 <h3>{event.title}</h3>
                 <p>{event.description}</p>
                 
-                <div className="timeline-image-placeholder">
-                  Event Photo Placeholder
+                <div className="timeline-image-container">
+                  <img 
+                    src={`${process.env.PUBLIC_URL}/placeholder_${2020 + Math.min(Math.floor(index/3), 3)}.jpg`} 
+                    alt={`${event.title} event`} 
+                    className="timeline-image" 
+                  />
                 </div>
               </div>
             </motion.div>

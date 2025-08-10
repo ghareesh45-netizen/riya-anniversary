@@ -8,25 +8,25 @@ const JourneyPage = () => {
       year: 2021,
       title: 'When We First Met',
       description: 'The magical beginning of our story',
-      image: 'placeholder_2020.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_2020.jpg`
     },
     {
       year: 2022,
       title: 'Growing Together',
       description: 'A year of adventures and discoveries',
-      image: 'placeholder_2021.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_2021.jpg`
     },
     {
       year: 2023,
       title: 'Stronger Than Ever',
       description: 'Overcoming challenges side by side',
-      image: 'placeholder_2022.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_2022.jpg`
     },
     {
       year: 2024,
       title: 'Creating Memories',
       description: 'Building our future together',
-      image: 'placeholder_2023.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_2023.jpg`
     }
   ];
 
@@ -42,7 +42,7 @@ const JourneyPage = () => {
       
       <Parallax
         blur={{ min: -15, max: 15 }}
-        bgImage="placeholder_parallax_bg.jpg"
+        bgImage={`${process.env.PUBLIC_URL}/placeholder_parallax_bg.jpg`}
         strength={200}
         className="parallax-container"
       >

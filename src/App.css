@@ -307,12 +307,17 @@ h1 {
 .timeline-image-container {
   position: relative;
   margin: 1.5rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-image {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 .timeline-icon {
@@ -403,6 +408,12 @@ h1 {
   aspect-ratio: 1 / 1;
 }
 
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .gallery-item img,
 .gallery-item video {
   width: 100%;
@@ -414,6 +425,14 @@ h1 {
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .play-icon {
@@ -466,10 +485,12 @@ h1 {
 }
 
 .lightbox-content img,
-.lightbox-content video {
+.lightbox-content video,
+.lightbox-image {
   max-width: 100%;
   max-height: 80vh;
   display: block;
+  object-fit: contain;
 }
 
 .lightbox-caption {

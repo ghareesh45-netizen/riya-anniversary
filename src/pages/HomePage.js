@@ -29,7 +29,7 @@ const HomePage = () => {
 
           <div className="hero-image-container">
             <img
-              src="love.jpg"
+              src={`${process.env.PUBLIC_URL}/love.jpg`}
               alt="Us together"
               className="hero-image"
             />

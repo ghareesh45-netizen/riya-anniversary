@@ -264,3 +264,31 @@ footer p {
     font-size: 3rem;
     animation: heartBeat 1.5s infinite;
 }
+/* Extra small devices (phones under 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* one item per row */
+    }
+}

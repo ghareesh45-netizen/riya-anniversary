@@ -128,6 +128,36 @@
             padding: 2rem 0;
             color: var(--primary-color);
         }
+        /* Mobile Fixes */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    /* Timeline adjustments */
+    .timeline::before {
+        left: 20px; /* Move line to left for mobile */
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px; /* Space for line */
+    }
+
+    /* Gallery adjustments */
+    .gallery {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
     </style>
 </head>
 <body>

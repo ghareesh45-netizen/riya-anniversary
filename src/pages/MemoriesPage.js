@@ -13,7 +13,7 @@ const MemoriesPage = () => {
       date: 'Febraury 17, 2023',
       description: '',
       category: 'dates',
-      image: 'placeholder_memory1.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory1.jpg`
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const MemoriesPage = () => {
       date: 'June 29, 2023',
       description: '',
       category: 'trips',
-      image: 'placeholder_memory2.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory2.jpg`
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const MemoriesPage = () => {
       date: 'August 27, 2021',
       description: 'Celebrating Onam together at SNG',
       category: 'celebrations',
-      image: 'placeholder_memory3.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory3.jpg`
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const MemoriesPage = () => {
       date: 'June 20, 2023',
       description: 'Taking mirror selfie',
       category: 'funny',
-      image: 'placeholder_memory4.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory4.jpg`
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ const MemoriesPage = () => {
       date: 'December 15, 2023',
       description: 'Attending First Marriage Function together',
       category: 'trips',
-      image: 'placeholder_memory5.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory5.jpg`
     },
     {
       id: 6,
@@ -53,7 +53,7 @@ const MemoriesPage = () => {
       date: 'September 2, 2022',
       description: 'First Time on Giant Wheel',
       category: 'adventures',
-      image: 'placeholder_memory6.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory6.jpg`
     },
     {
       id: 7,
@@ -61,7 +61,7 @@ const MemoriesPage = () => {
       date: '',
       description: 'First Temple Date',
       category: 'dates',
-      image: 'placeholder_memory7.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory7.jpg`
     },
     {
       id: 8,
@@ -69,7 +69,7 @@ const MemoriesPage = () => {
       date: 'July 19, 2023',
       description: 'Climbing Madavurpaara Together',
       category: 'adventures',
-      image: 'placeholder_memory8.jpg'
+      image: `${process.env.PUBLIC_URL}/placeholder_memory8.jpg`
     }
   ];
   

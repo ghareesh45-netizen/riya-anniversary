@@ -3,49 +3,49 @@ import { motion } from 'framer-motion';
 import { FaPlay, FaPause, FaExpand, FaHeart } from 'react-icons/fa';
 
 const VideoMoments = () => {
-  // Video data placeholders
+  // Video data with placeholder videos from public folder
   const videos = [
     { 
       id: 1, 
       title: "Our First Dance", 
       description: "The moment we first danced together at our friend's wedding.",
-      src: "VIDEO_PLACEHOLDER_1",
-      thumbnail: "THUMBNAIL_PLACEHOLDER_1"
+      src: `${process.env.PUBLIC_URL}/placeholder_video1.mp4`,
+      thumbnail: `${process.env.PUBLIC_URL}/placeholder_memory1.jpg`
     },
     { 
       id: 2, 
       title: "Beach Vacation", 
       description: "Fun times at the beach during our summer vacation.",
-      src: "VIDEO_PLACEHOLDER_2",
-      thumbnail: "THUMBNAIL_PLACEHOLDER_2"
+      src: `${process.env.PUBLIC_URL}/placeholder_video2.mp4`,
+      thumbnail: `${process.env.PUBLIC_URL}/placeholder_memory2.jpg`
     },
     { 
       id: 3, 
       title: "Cake Smash", 
       description: "That time we got messy with cake!",
-      src: "./assets/images/cake_smash.mp4",
-      thumbnail: "THUMBNAIL_PLACEHOLDER_3"
+      src: `${process.env.PUBLIC_URL}/placeholder_video3.mp4`,
+      thumbnail: `${process.env.PUBLIC_URL}/placeholder_memory3.jpg`
     },
     { 
       id: 4, 
       title: "Road Trip Sing-along", 
       description: "Singing our favorite songs during our road trip.",
-      src: "VIDEO_PLACEHOLDER_4",
-      thumbnail: "THUMBNAIL_PLACEHOLDER_4"
+      src: `${process.env.PUBLIC_URL}/placeholder_video1.mp4`,
+      thumbnail: `${process.env.PUBLIC_URL}/placeholder_memory4.jpg`
     },
     { 
       id: 5, 
       title: "Cooking Together", 
       description: "Our attempt at making that complicated recipe!",
-      src: "VIDEO_PLACEHOLDER_5",
-      thumbnail: "THUMBNAIL_PLACEHOLDER_5"
+      src: `${process.env.PUBLIC_URL}/placeholder_video2.mp4`,
+      thumbnail: `${process.env.PUBLIC_URL}/placeholder_memory5.jpg`
     },
     { 
       id: 6, 
       title: "Anniversary Surprise", 
       description: "When I surprised you on our last anniversary.",
-      src: "VIDEO_PLACEHOLDER_6",
-      thumbnail: "THUMBNAIL_PLACEHOLDER_6"
+      src: `${process.env.PUBLIC_URL}/placeholder_video3.mp4`,
+      thumbnail: `${process.env.PUBLIC_URL}/placeholder_memory6.jpg`
     },
   ];
   
@@ -114,12 +114,7 @@ const VideoMoments = () => {
               Your browser does not support the video tag.
             </video>
             
-            {/* Video placeholder for videos that will be added later */}
-            {featuredVideo.src.includes('PLACEHOLDER') && (
-              <div className="video-placeholder">
-                <div className="placeholder-text">{featuredVideo.title}</div>
-              </div>
-            )}
+            {/* Video controls overlay */}
             
             {/* Video controls */}
             <div className="video-controls">
@@ -151,9 +146,11 @@ const VideoMoments = () => {
                 whileTap={{ scale: 0.98 }}
                 onClick={() => selectVideo(video)}
               >
-                <div className="thumbnail-placeholder">
-                  <div className="placeholder-text">{video.title}</div>
-                </div>
+                <img 
+                  src={video.thumbnail} 
+                  alt={video.title} 
+                  className="thumbnail-image" 
+                />
                 <div className="thumbnail-overlay">
                   <FaPlay />
                 </div>

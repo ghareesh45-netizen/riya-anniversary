@@ -75,7 +75,17 @@ const MusicPlayer = ({ songSrc }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.5 }}
-      style={{ width: '200px', height: '80px' }}
+      style={{
+        width: '200px',
+        height: '80px',
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        background: 'rgba(255, 255, 255, 0.8)',
+        borderRadius: '10px',
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+        zIndex: 100
+      }}
     >
       <audio ref={audioRef} src={songSrc} preload="auto" loop />
 

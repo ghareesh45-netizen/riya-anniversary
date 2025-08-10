@@ -1,0 +1,176 @@
+/* Responsive Styles */
+
+/* Base responsive adjustments */
+@media (max-width: 768px) {
+  /* General layout fixes */
+  .App {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Header adjustments */
+  .site-header {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Main content adjustments */
+  .main-content {
+    padding: 1rem;
+  }
+  
+  /* Hero section adjustments */
+  .hero-section {
+    padding: 1rem 0.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+    word-wrap: break-word;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem !important;
+  }
+  
+  .hero-image-container {
+    max-width: 95% !important;
+  }
+  
+  /* Card and section adjustments */
+  .greeting-card, 
+  .card-content,
+  .memory-card,
+  .timeline-event,
+  .note-card,
+  .gallery-item,
+  .video-card {
+    width: 100% !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  /* Timeline specific fixes */
+  .timeline-wrapper::before {
+    left: 1rem !important;
+  }
+  
+  .timeline-event {
+    width: calc(100% - 2rem) !important;
+    left: 2rem !important;
+  }
+  
+  .event-content::before {
+    left: -1.5rem !important;
+  }
+  
+  /* Gallery grid adjustments */
+  .gallery-grid,
+  .memory-cards,
+  .love-notes-grid,
+  .notes-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  /* Button adjustments */
+  .nav-button {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  /* Music player adjustments */
+  .music-player {
+    width: 150px !important;
+    height: 60px !important;
+    bottom: 10px !important;
+    right: 10px !important;
+  }
+  
+  .player-controls button {
+    font-size: 12px !important;
+    padding: 3px 6px !important;
+  }
+  
+  .progress-container .time {
+    font-size: 8px !important;
+  }
+  
+  .now-playing {
+    font-size: 8px !important;
+  }
+  
+  /* Teddy GIFs adjustments */
+  .teddy-corner,
+  .teddy-top,
+  .teddy-left {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  
+  /* Floating hearts adjustments */
+  .floating-heart {
+    font-size: 1rem !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .nav-button {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.7rem !important;
+  }
+  
+  .teddy-corner,
+  .teddy-top,
+  .teddy-left {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  /* Further reduce spacing */
+  .main-content {
+    padding: 0.5rem;
+  }
+  
+  section {
+    margin: 1rem 0 !important;
+    padding: 0.8rem !important;
+  }
+  
+  /* Adjust font sizes */
+  p, div {
+    font-size: 0.9rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.2rem !important;
+  }
+}
