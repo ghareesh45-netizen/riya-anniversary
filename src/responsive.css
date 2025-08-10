@@ -205,24 +205,16 @@ footer {
     gap: 1rem !important;
   }
 }
-/* ===== Existing responsive.css content ===== */
-/* (Keep your existing general responsive styles here) */
-
-/* Example: Adjust headings and text on smaller screens */
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.6rem;
-  }
-}
 
 /* ===== Journey Page Mobile Fixes ===== */
 @media (max-width: 768px) {
+  .parallax-container {
+    min-height: auto;
+    padding: 20px 0;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
   .timeline {
     display: flex;
     flex-direction: column !important;
@@ -232,23 +224,31 @@ footer {
   .timeline-item {
     width: 100% !important;
     margin: 1rem 0 !important;
+    flex-direction: column !important;
+    padding: 15px 0 !important;
   }
 
   .timeline-content {
     text-align: center !important;
+    max-width: 100%;
   }
 
   .timeline-image-container {
     width: 100% !important;
     max-width: 100% !important;
-    margin: 0 auto !important;
+    margin: 10px auto !important;
+    display: flex;
+    justify-content: center;
   }
 
   .timeline-image {
     width: 100% !important;
+    max-width: 320px;
     height: auto !important;
     display: block;
     border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
   }
 
   .timeline-icon {
@@ -258,5 +258,10 @@ footer {
   .year-badge {
     font-size: 1rem !important;
     padding: 0.3rem 0.6rem !important;
+  }
+
+  .journey-quotes {
+    padding: 20px;
+    font-size: 0.9rem;
   }
 }
