@@ -205,3 +205,58 @@ footer {
     gap: 1rem !important;
   }
 }
+/* ===== Existing responsive.css content ===== */
+/* (Keep your existing general responsive styles here) */
+
+/* Example: Adjust headings and text on smaller screens */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===== Journey Page Mobile Fixes ===== */
+@media (max-width: 768px) {
+  .timeline {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 100% !important;
+    margin: 1rem 0 !important;
+  }
+
+  .timeline-content {
+    text-align: center !important;
+  }
+
+  .timeline-image-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .timeline-image {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .timeline-icon {
+    margin-top: 0.5rem;
+  }
+
+  .year-badge {
+    font-size: 1rem !important;
+    padding: 0.3rem 0.6rem !important;
+  }
+}
