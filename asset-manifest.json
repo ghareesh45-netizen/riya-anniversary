@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/riya-anniversary/static/css/main.62f8a990.css",
-    "main.js": "/riya-anniversary/static/js/main.718e6790.js",
+    "main.css": "/riya-anniversary/static/css/main.ae86e8b8.css",
+    "main.js": "/riya-anniversary/static/js/main.b56ba0d6.js",
     "static/js/453.c45840bc.chunk.js": "/riya-anniversary/static/js/453.c45840bc.chunk.js",
     "static/media/placeholder_note7.jpg": "/riya-anniversary/static/media/placeholder_note7.58c0371dfcf1a62d534a.jpg",
     "static/media/placeholder_note6.jpg": "/riya-anniversary/static/media/placeholder_note6.35fe38f60cde7abfa77d.jpg",
@@ -12,12 +12,12 @@
     "static/media/placeholder_note5.jpg": "/riya-anniversary/static/media/placeholder_note5.b8018b4b0757d9902e69.jpg",
     "static/media/placeholder_note1.jpeg": "/riya-anniversary/static/media/placeholder_note1.fd4819b047d091de524e.jpeg",
     "index.html": "/riya-anniversary/index.html",
-    "main.62f8a990.css.map": "/riya-anniversary/static/css/main.62f8a990.css.map",
-    "main.718e6790.js.map": "/riya-anniversary/static/js/main.718e6790.js.map",
+    "main.ae86e8b8.css.map": "/riya-anniversary/static/css/main.ae86e8b8.css.map",
+    "main.b56ba0d6.js.map": "/riya-anniversary/static/js/main.b56ba0d6.js.map",
     "453.c45840bc.chunk.js.map": "/riya-anniversary/static/js/453.c45840bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62f8a990.css",
-    "static/js/main.718e6790.js"
+    "static/css/main.ae86e8b8.css",
+    "static/js/main.b56ba0d6.js"
   ]
 }
